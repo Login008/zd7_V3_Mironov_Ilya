@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="HotelBooking.MainPage">
+    <ContentPage.Resources>
+        <StyleSheet Source="styles.css">
+        </StyleSheet>
+    </ContentPage.Resources>
+    <ListView x:Name="hotelListView" StyleClass="inputField"/>
+    <Entry x:Name="surnameEntry" StyleClass="inputField" Placeholder="Введите свою фамилию" PlaceholderColor="Black"/>
+    <Entry x:Name="ageEntry" StyleClass="inputField" Placeholder="Введите свой возраст в годах" PlaceholderColor="Black" Keyboard ="Numeric"/>
+    <StackLayout x:Name="stackWithPicker" Orientation="Horizontal">
+        <Label Text="Выберите дату заезда" StyleClass="nameLabel" VerticalTextAlignment="Center"/>
+        <DatePicker x:Name="checkInDatePicker" StyleClass="inputField"/>
+    </StackLayout>
+    <StackLayout Orientation="Horizontal" x:Name="stackPicker">
+        <Label Text="Выберите способ оплаты" StyleClass="nameLabel" VerticalTextAlignment="Center"/>
+        <Picker x:Name="picker" StyleClass="inputField" WidthRequest="160">
+            <Picker.Items>
+                <x:String>Безналичный расчёт</x:String>
+                <x:String>Наличный расчёт</x:String>
+            </Picker.Items>
+        </Picker>
+    </StackLayout>
+</ContentPage>

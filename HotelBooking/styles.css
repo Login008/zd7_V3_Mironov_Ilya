@@ -1,0 +1,33 @@
+.headerLabel {
+    font-size: 20;
+    font-weight: bold;
+    color: blue;
+    text-align: center;
+    margin: 10;
+}
+
+.nameLabel {
+    font-size: 14;
+    font-weight: bold;
+    color: white;
+}
+
+.directorLabel {
+    font-size: 12;
+    color: gray;
+}
+
+.inputField {
+    margin: 5;
+    border-color: black;
+    font-size: 14;
+    background-color: lightgray;
+    color: black;
+    
+}
+
+.actionButton {
+    margin: 5;
+    background-color: lightblue;
+    font-size: 16;
+}

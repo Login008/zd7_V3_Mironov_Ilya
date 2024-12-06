@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="HotelBooking.RoomSelectionPage">
+    <ContentPage.Resources>
+        <StyleSheet Source="styles.css">
+        </StyleSheet>
+    </ContentPage.Resources>
+    <Entry x:Name="numberOfPlaces" Placeholder = "Количество мест" Keyboard="Numeric" StyleClass="inputField" PlaceholderColor="Black"/>
+    <Entry x:Name="numberOfRooms" Placeholder = "Количество номеров" Keyboard="Numeric" StyleClass="inputField" PlaceholderColor="Black"/>
+</ContentPage>
